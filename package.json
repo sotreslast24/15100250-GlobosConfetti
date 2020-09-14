@@ -1,0 +1,19 @@
+{
+  "name": "globosconfetti",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto html",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sotreslast24/15100250-GlobosConfetti.git"
+  },
+  "author": "Sotres Torres Luis Antonio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sotreslast24/15100250-GlobosConfetti/issues"
+  },
+  "homepage": "https://github.com/sotreslast24/15100250-GlobosConfetti#readme"
+}
