@@ -4,6 +4,7 @@
   "description": "Mi primer proyecto html",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
