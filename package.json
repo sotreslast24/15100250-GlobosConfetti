@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/sotreslast24/15100250-GlobosConfetti/issues"
   },
-  "homepage": "https://github.com/sotreslast24/15100250-GlobosConfetti#readme"
+  "homepage": "https://github.com/sotreslast24/15100250-GlobosConfetti#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
 }
