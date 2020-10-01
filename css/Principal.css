@@ -19,6 +19,16 @@ footer a{
     color:#ffffff;
 }
 
+footer a:hover{
+    color:#ffffff;
+    font-weight: bold;
+}
+
+footer i:hover{
+    color:#0004ff;
+    font-weight: bold;
+}
+
 .card-design{
     flex: 1 250px;
     padding: 2px 5px 2px 0px;
