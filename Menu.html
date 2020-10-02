@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Globos Confetti!!</title>
-        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/Principal.css">
-        <link rel="stylesheet" href="/css/font-awesome.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Globos Confetti!!</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/Principal.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+</head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="./index.html"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Globos Confetti!</a>
+        <a class="navbar-brand" href="./index.html"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+            Globos Confetti! </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio<span class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"><a class="nav-link" href="./Nosotros.html">Nosotros</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./Menu.html">Menu</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./Galeria.html">Galeria</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./Contacto.html">Contacto</a> </li>
+                <li class="nav-item"><a class="nav-link" href="./index.html" data-toggle="tooltip" data-placement="top" title="Inicio">Inicio<span
+                            class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"><a class="nav-link" href="./Nosotros.html" data-toggle="tooltip" data-placement="top" title="Contactanos">Nosotros</a> </li>
+                <li class="nav-item"><a class="nav-link" href="./Menu.html" data-toggle="tooltip" data-placement="top" title="Paquetes">Paquetes</a> </li>
+                <li class="nav-item"><a class="nav-link" href="./Galeria.html" data-toggle="tooltip" data-placement="top" title="Galeria">Galeria</a> </li>
+                <li class="nav-item"><a class="nav-link" href="./Contacto.html" data-toggle="tooltip" data-placement="top" title="Contacto">Contacto</a> </li>
             </ul>
 
         </div>
@@ -38,58 +40,145 @@
     </div>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Menu</li>
+            <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Menu</li>
         </ol>
-      </nav>
+    </nav>
 
     <div class="container">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"  >
+                Paquete de globos
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Bouquet</button>
+                <button class="dropdown-item" type="button">Maxi Bouquet</button>
+                <button class="dropdown-item" type="button">Guirnaldas</button>
+            </div>
+        </div><br />
+
         <div class="row">
             <table class="table table-hover">
                 <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Nombre del Paquete</th>
+                        <th scope="col">Precio</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Bouquet Fiesta</td>
+                        <td>$1500</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Graduacion</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Verano</td>
+                        <td>$250</td>
+                    </tr>
                 </tbody>
-              </table>
+            </table>
         </div>
 
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Paquete Bouquet Fiesta
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h4>Incluye</h4><br />
+                        <p>- 2 globo burbuja 40cm c/u</p>
+                        <p> - 4 globo mármol fashion #12</p>
+                        <p> - 2 globo perla #12 lila</p>
+                        <p> - 2 globo perla #12 rosa</p>
+                        <p>- 2 globo transparente #12</p>
+                        <p>- 1 frase en vinil a elegir:
+                            <li>Te amo</li>
+                            <li>Eres muy especial</li>
+                            <li>Te quiero de aqui a la luna</li>
+                            <li>Te quiero</li>
+                            <li>Feliz día</li>
+                            <li>Felicidades</li>
+                            <li>Te amo infinitamente</li><br />
+
+                        <p> - 15g de confeti gigante redondo (Lila, rosa y oro)
+                        <p>- 10g de confeti oro mediano</p>
+                        <p>- 2m de liston rosa 1.5"</p>
+                        <p>- 2 borlas doradas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Paquete Bouquet Graduacion
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h4>Incluye</h4><br />
+                        <p>- 2 globo folio 18" </p>
+                        <p> - 3 globo Látex 12" c/u</p>
+                        <p> - 1 globo confetti 12"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Paquete Bouquet Verano
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h4>Incluye</h4><br />
+                        <p>- 1 globo 18" :</p>
+                        <li>Confetti</li>
+                        <li>Pintura</li><br />
+                        <p> - 2 globo Látex 12" c/u</p>
+                        <p> - 1 Figura Metalica</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-   
+
+
+
+
     <footer>
         <div class="row">
             <div class="col-sm-4 " style="font-size:larger;">
-                <a href="https://www.facebook.com/ConfettiGlobos/"><i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/ConfettiGlobos/" data-toggle="tooltip" data-placement="top" title="facebook" ><i class="fa fa-facebook" aria-hidden="true"></i>
                     Facebook</a><br />
 
-                <a href="https://www.instagram.com/confettiballoonsydeco/"><i class="fa fa-instagram"
+                <a href="https://www.instagram.com/confettiballoonsydeco/" data-toggle="tooltip" data-placement="top" title="instagram" ><i class="fa fa-instagram"
                         aria-hidden="true"></i> Instagram
                     <br /> </a>
 
-                <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+                <a href="http://www.twitter.com" data-toggle="tooltip" data-placement="top" title="twitter" ><i class="fa fa-twitter" aria-hidden="true"></i> Twitter
                     <br /> </a>
             </div>
 
@@ -104,13 +193,14 @@
             </div>
 
             <div class="col-sm-4 d-flex flex-column align-items-end" style="font-size:larger;">
-                <a href="#">Contactanos</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Menu</a>
-                <a href="#">Galeria</a>
+                <a href="./Contacto.html" data-toggle="tooltip" data-placement="top" title="Contactanos" >Contactanos</a>
+                <a href="./Nosotros.html" data-toggle="tooltip" data-placement="top" title="Nosotros" >Nosotros</a>
+                <a href="./Menu.html" data-toggle="tooltip" data-placement="top" title="Paquetes" >Paquetes</a>
+                <a href="./Galeria.html" data-toggle="tooltip" data-placement="top" title="Galeria" >Galeria</a>
             </div>
         </div>
     </footer>
+
 
 
     <!-- JS, Popper.js, and jQuery -->

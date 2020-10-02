@@ -12,19 +12,20 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="./index.html"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Globos Confetti!</a>
+        <a class="navbar-brand" href="./index.html"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+            Globos Confetti! </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio<span
+                <li class="nav-item"><a class="nav-link" href="./index.html" data-toggle="tooltip" data-placement="top" title="Inicio">Inicio<span
                             class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"><a class="nav-link" href="./Nosotros.html">Nosotros</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./Menu.html">Menu</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./Galeria.html">Galeria</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./Contacto.html">Contacto</a> </li>
+                <li class="nav-item"><a class="nav-link" href="./Nosotros.html" data-toggle="tooltip" data-placement="top" title="Contactanos">Nosotros</a> </li>
+                <li class="nav-item"><a class="nav-link" href="./Menu.html" data-toggle="tooltip" data-placement="top" title="Paquetes">Paquetes</a> </li>
+                <li class="nav-item"><a class="nav-link" href="./Galeria.html" data-toggle="tooltip" data-placement="top" title="Galeria">Galeria</a> </li>
+                <li class="nav-item"><a class="nav-link" href="./Contacto.html" data-toggle="tooltip" data-placement="top" title="Contacto">Contacto</a> </li>
             </ul>
 
         </div>
@@ -39,11 +40,18 @@
     </div>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+            <li class="breadcrumb-item" data-toggle="tooltip" data-placement="top" title="Inicio" ><a href="./index.html">Inicio</a></li>
             <li class="breadcrumb-item active" aria-current="page">Contacto</li>
         </ol>
     </nav>
 
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Contactanos!!</strong> Si necesita contactarnos para algun evento por favor dejanos saber con su
+        informacion llenando el formulario
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
     <div class="container">
         <h4>Dejanos un mensaje</h4>
@@ -51,21 +59,21 @@
         <div class="row">
             <div class="col">
                 <label>Nombre</label>
-                <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                <input type="text" class="form-control" placeholder="Ingrese su nombre" data-toggle="popover" data-placement="right" data-content="Escriba su nombre">
             </div>
 
             <div class="col">
                 <label>Apellido</label>
-                <input type="text" class="form-control" placeholder="Ingrese su apellido"><br />
+                <input type="text" class="form-control" placeholder="Ingrese su apellido" data-toggle="popover" data-placement="right" data-content="Escriba su apellido"><br />
             </div>
 
             <div class="form-group col-md-12">
                 <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" placeholder="Ingrese su email">
+                <input type="email" class="form-control" placeholder="Ingrese su email" data-toggle="popover" data-placement="right" data-content="Escriba su email@gmail.com|email@hotmail.com">
             </div>
             <div class="col-md-8">
                 <label>Domicilio</label>
-                <input type="text" class="form-control" placeholder="Ingrese su Domicilio"><br />
+                <input type="text" class="form-control" placeholder="Ingrese su Domicilio" data-toggle="popover" data-placement="right" data-content="Escriba su domicilio"><br />
             </div>
 
             <div class="form-group col-md-4">
@@ -92,9 +100,14 @@
                 </div>
 
                 <div class="col">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                </div>
+                    <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Enviar" >Enviar</button> 
+                    
+                </div><br />
 
+                <div class="alert alert-warning alert-dismissible fade show">
+                    <strong>Aviso!! </strong>Favor de ingresar datos validos en los campos correspondientes antes de enviar la informacion.
+                    <button type="button" class="close" data-dismiss="alert">&times;</button> 
+                </div>
             </div>
 
 
@@ -103,18 +116,18 @@
 
     </div>
 
-    
+
     <footer>
         <div class="row">
             <div class="col-sm-4 " style="font-size:larger;">
-                <a href="https://www.facebook.com/ConfettiGlobos/"><i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/ConfettiGlobos/" data-toggle="tooltip" data-placement="top" title="facebook" ><i class="fa fa-facebook" aria-hidden="true"></i>
                     Facebook</a><br />
 
-                <a href="https://www.instagram.com/confettiballoonsydeco/"><i class="fa fa-instagram"
+                <a href="https://www.instagram.com/confettiballoonsydeco/" data-toggle="tooltip" data-placement="top" title="instagram" ><i class="fa fa-instagram"
                         aria-hidden="true"></i> Instagram
                     <br /> </a>
 
-                <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+                <a href="http://www.twitter.com" data-toggle="tooltip" data-placement="top" title="twitter" ><i class="fa fa-twitter" aria-hidden="true"></i> Twitter
                     <br /> </a>
             </div>
 
@@ -129,10 +142,10 @@
             </div>
 
             <div class="col-sm-4 d-flex flex-column align-items-end" style="font-size:larger;">
-                <a href="#">Contactanos</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Menu</a>
-                <a href="#">Galeria</a>
+                <a href="./Contacto.html" data-toggle="tooltip" data-placement="top" title="Contactanos" >Contactanos</a>
+                <a href="./Nosotros.html" data-toggle="tooltip" data-placement="top" title="Nosotros" >Nosotros</a>
+                <a href="./Menu.html" data-toggle="tooltip" data-placement="top" title="Paquetes" >Paquetes</a>
+                <a href="./Galeria.html" data-toggle="tooltip" data-placement="top" title="Galeria" >Galeria</a>
             </div>
         </div>
     </footer>
