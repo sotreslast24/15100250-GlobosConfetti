@@ -5,7 +5,42 @@
 .jumbotron{
 background-color: rgb(255, 180, 191);
 color: #ffffff;
+background-image: url(../img/ban.jpg);
+height: 30vh;
+background-size: cover;
+background-position: top center;
+color: white;
+text-align: center;
+padding-top: 150px;
+text-shadow: 1px 2px rgb(160, 160, 160);
 }
+
+.jumbotron-seccion{
+    background-image: url(../img/bnr.png);
+    height: 30vh;
+    background-size: cover;
+    background-position: top center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 150px;
+    text-shadow: 2px 3px rgb(255, 255, 255);
+    }
+
+    .jumbotron-Galeria{
+        background-image: url(../img/banner2.png);
+        }
+
+    .jumbotron-Menu{
+        background-image: url(../img/banner3.png);
+        }
+
+    .jumbotron-Nosotros{
+        background-image: url(../img/banner1.png);
+        }
+
+    .jumbotron-contacto{
+        background-image: url(../img/bnr.png);
+        }
 
 footer{
     padding: 10px 20px 0px 20px;
