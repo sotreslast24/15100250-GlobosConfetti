@@ -2,6 +2,11 @@
     width: 100%;
 }
 
+.banner{
+    /*padding-top: 56; */
+   margin-block-end: 20px;
+   }
+   
 .jumbotron{
 background-color: rgb(255, 180, 191);
 color: #ffffff;
