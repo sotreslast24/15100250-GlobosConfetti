@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Globos Confetti!!</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/Principal.css">
-   <!-- <link rel="stylesheet" href="/css/style.css">-->
+  <!--  <link rel="stylesheet" href="/css/Principal.css"> -->
+   <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
 </head>
 
@@ -306,8 +306,33 @@
 </body>
 
 <script>
-    $('.carousel').carousel({
-        interval: 6000
+    $(function () {
+        $("[data-toggle2='tooltip']").tooltip();
+        $("[data-toggle='popover']").popover();
+        $('.carousel').carousel({
+            interval: 6000
+        });
+
+        $('#tacosBtn').on('show.bs.modal', function (e) {
+            console.log('el modal se está mostrando');
+            $('#tacosBtn').removeClass('btn-primary');
+            $('#tacosBtn').addClass('btn-success');
+            $('#tacosBtn').prop('disabled', true)
+        });
+
+        $('#tacosBtn').on('shown.bs.modal', function (e) {
+            console.log('el modal se mostró');
+        });
+
+        $('#tacosBtn').on('hide.bs.modal', function (e) {
+            console.log('el modal se oculta');
+        });
+
+        $('#tacosBtn').on('hidden.bs.modal', function (e) {
+            console.log('el modal se ocultó');
+            $('#tacosBtn').prop('disabled', false)
+        });
     })
 </script>
+
 </html>

@@ -74,4 +74,17 @@ footer i:hover{
     padding: 2px 5px 2px 0px;
     margin-top: 15px;
 }
-
+@media (min-width: 768px) {
+    .banner{
+        padding-top: 56px;
+        margin-block-end: 20px;
+    }
+    .carousel-caption {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-align: center;
+        
+        margin-block-end: 20px;
+        text-shadow: 2px 3px rgb(255, 255, 255);
+    }
+}
