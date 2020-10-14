@@ -1,0 +1,74 @@
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item" data-toggle="tooltip" data-placement="top" title="Inicio" ><a href="./index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>
+    </nav>
+</div>
+
+
+
+
+<div class="container">
+    <h4>Dejanos un mensaje</h4>
+    <h5>Completa los siguientes datos</h5>
+    <div class="row">
+        <div class="col">
+            <label>Nombre</label>
+            <input type="text" class="form-control" placeholder="Ingrese su nombre" data-toggle="popover" data-placement="right" data-content="Escriba su nombre">
+        </div>
+
+        <div class="col">
+            <label>Apellido</label>
+            <input type="text" class="form-control" placeholder="Ingrese su apellido" data-toggle="popover" data-placement="right" data-content="Escriba su apellido"><br />
+        </div>
+
+        <div class="form-group col-md-12">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" placeholder="Ingrese su email" data-toggle="popover" data-placement="right" data-content="Escriba su email@gmail.com|email@hotmail.com">
+        </div>
+        <div class="col-md-8">
+            <label>Domicilio</label>
+            <input type="text" class="form-control" placeholder="Ingrese su Domicilio" data-toggle="popover" data-placement="right" data-content="Escriba su domicilio"><br />
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="inputState">Provincia</label>
+            <select id="inputState" class="form-control">
+                <option selected>Capital Federal</option>
+                <option>...</option>
+            </select>
+        </div>
+
+        <div class="form-group col-md-12">
+            <label for="exampleFormControlTextarea1">Comentario</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Quiero que me contacten
+                    </label>
+                </div><br />
+            </div>
+
+            <div class="col">
+                <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Enviar" >Enviar</button> 
+                
+            </div><br />
+
+            <div class="alert alert-warning alert-dismissible fade show">
+                <strong>Aviso!! </strong>Favor de ingresar datos validos en los campos correspondientes antes de enviar la informacion.
+                <button type="button" class="close" data-dismiss="alert">&times;</button> 
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>

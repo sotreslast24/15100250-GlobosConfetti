@@ -20,12 +20,20 @@
   },
   "homepage": "https://github.com/sotreslast24/15100250-GlobosConfetti#readme",
   "dependencies": {
+    "-": "0.0.1",
     "@popperjs/core": "^2.5.3",
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "sass": "^1.26.11",
+    "g": "^2.0.1",
+    "less": "^3.12.2",
+    "open-iconic": "^1.1.1"
+  
+
   },
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1"
   }
 }
