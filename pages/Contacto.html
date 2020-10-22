@@ -7,6 +7,14 @@
     </nav>
 </div>
 
+<div class="alert alert-info alert-dismissible fade show" role="alert">
+    <strong>Contactanos!!</strong> Si necesita contactarnos para algun evento por favor dejanos saber con su
+    informacion llenando el formulario
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
 
 
 
@@ -14,23 +22,23 @@
     <h4>Dejanos un mensaje</h4>
     <h5>Completa los siguientes datos</h5>
     <div class="row">
-        <div class="col">
+        <div class="col" id="divtxtNombre">
             <label>Nombre</label>
-            <input type="text" class="form-control" placeholder="Ingrese su nombre" data-toggle="popover" data-placement="right" data-content="Escriba su nombre">
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" data-toggle="popover" data-placement="right" data-content="Escriba su nombre">
         </div>
 
         <div class="col">
             <label>Apellido</label>
-            <input type="text" class="form-control" placeholder="Ingrese su apellido" data-toggle="popover" data-placement="right" data-content="Escriba su apellido"><br />
+            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" data-toggle="popover" data-placement="right" data-content="Escriba su apellido"><br />
         </div>
 
         <div class="form-group col-md-12">
             <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" placeholder="Ingrese su email" data-toggle="popover" data-placement="right" data-content="Escriba su email@gmail.com|email@hotmail.com">
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su email" data-toggle="popover" data-placement="right" data-content="Escriba su email@gmail.com|email@hotmail.com">
         </div>
         <div class="col-md-8">
             <label>Domicilio</label>
-            <input type="text" class="form-control" placeholder="Ingrese su Domicilio" data-toggle="popover" data-placement="right" data-content="Escriba su domicilio"><br />
+            <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su Domicilio" data-toggle="popover" data-placement="right" data-content="Escriba su domicilio"><br />
         </div>
 
         <div class="form-group col-md-4">
@@ -57,7 +65,7 @@
             </div>
 
             <div class="col">
-                <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Enviar" >Enviar</button> 
+                <button type="submit" onclick="Enviar(); return false;"  class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Enviar" >Enviar</button> 
                 
             </div><br />
 
@@ -72,3 +80,51 @@
 
 
 </div>
+<script>
+    $(function () {
+        // console.log("Funcion Inicial");
+        txtNombre_blur();
+        txtApePat_blur();
+
+    });
+    function Enviar() {
+        var x = validar();
+        console.log(x);
+        if (x) {
+            txtNombre_blur();
+            txtApePat_blur();
+            console.log("Verdaro del If");
+            alert("Se enviaron los datos.");
+        }
+    };
+    function validar() {
+        var valido = true;
+        if ($("#nombre").val() == "") {
+            $("#nombre").focus();
+            valido = false;
+            console.log("Valida Nombre");
+        }
+
+        if ($("#apellido").val() == "") {
+            $("#apellido").focus();
+            valido = false;
+            console.log("Valida Apellido");
+
+        }
+        if ($("#email").val() == "") {
+                $("#email").focus();
+                valido = false;
+                console.log("Valida email");
+
+            }   
+             if ($("#domicilio").val() == "") {
+                $("#domicilio").focus();
+                valido = false;
+                console.log("Valida domicilio");
+
+            }
+        console.log("Validado: " + valido);
+        return valido;
+    };
+
+</script>
